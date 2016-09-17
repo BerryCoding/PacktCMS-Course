@@ -1,0 +1,187 @@
+/************************************************************************************************************************************************
+                    GENERAL
+************************************************************************************************************************************************/
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    background: #fff;
+    color: #4c4c4c;
+    padding: 0;
+    margin: 0;
+}
+
+/************************************************************************************************************************************************
+                    LOGIN PAGE
+************************************************************************************************************************************************/
+
+.loginPage {
+    overflow: hidden;
+    position: absolute;
+    width: 460px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.loginPage .header {
+    overflow: hidden;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.loginPage .header h1 {
+    color: #4287ee;
+    font-size: 42px;
+    line-height: 63px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.loginPage .header h2 {
+    color: #6b7078;
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/************************************************************************************************************************************************
+                    FORM LAYOUT
+************************************************************************************************************************************************/
+
+.formBox label {
+    font-size: 16px;
+    line-height: 24px;
+    color: #252525;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.formBox .form-control {
+    color: #4287ee;
+    height: 50px;
+    border-radius: 0;
+    border: 1px solid #787c83;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+/************************************************************************************************************************************************
+                    CUSTOM BUTTONS
+************************************************************************************************************************************************/
+
+.btn-blue {
+    background: #4287ee;
+    color: #fff;
+}
+
+.loginPage .btn-blue {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 26px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+/*
+SIDEBAR
+*/
+
+.page-container {
+    padding-left: 225px;
+    transition: all 0.5s ease 0s;
+}
+
+.sidebar-container {
+    background: #ffffff none repeat scroll 0 0;
+    border-right: 1px solid #e7e7e9;
+    height: 100%;
+    left: 225px;
+    margin-left: -225px;
+    overflow: hidden;
+    position: fixed;
+    transition: all 0.5s ease 0s;
+    width: 225px;
+    z-index: 1000;
+}
+
+.sidebar-container .logo {
+    padding: 15px 0 20px 0;
+    border-bottom: 1px solid #e7e7e9;
+    background: #4287ee;
+    text-align: center;
+}
+
+.sidebar-container .logo h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+}
+
+.page-container.toggled .sidebar-container {
+    width: 225px;
+}
+
+.sidebar-container .user-meta {
+    width: 100%;
+}
+
+.sidebar-container .user-meta .btn {
+    text-align: left;
+    border-radius: 0;
+    border: 1px solid transparent;
+    color: #616161;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    padding: 15px 5px 15px 30px;
+    display: block;
+    width: 100%;
+    background: transparent;
+}
+
+.sidebar-container .user-meta .btn:hover,
+.sidebar-container .user-meta .btn:focus,
+.sidebar-container .user-meta .dropdown.open .btn {
+    background: #f4f7f9;
+}
+
+.sidebar-container .user-meta .btn .fa {
+    padding-left: 3px;
+} 
+
+.sidebar-container .user-meta .btn span {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #898989;    
+}
+
+.sidebar-container .user-meta .dropdown-menu {
+    background: #f4f7f9;
+    border-radius: 0;
+    border: 1px solid transparent;
+    box-shadow: none;
+    min-width: 225px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-container .user-meta .dropdown-menu > li {
+    border-bottom: 1px solid #e7e7e9;
+}
+
+.sidebar-container .user-meta .dropdown-menu > li > a {
+    font-size: 14px;
+    line-height: 21px;
+}
